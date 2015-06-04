@@ -1,0 +1,667 @@
+﻿/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+	
+	*
+	*
+	*
+
+
+
+	*
+	*
+	*
+	
+	
+	
+	
+	
+	
+	
+	*/
+
+html, body {
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'TypoSlabserif-Light';
+	src: url('../fonts/TypoSlabserif-Light.eot');
+	src: url('../fonts/TypoSlabserif-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/TypoSlabserif-Light.woff2') format('woff2'), url('../fonts/TypoSlabserif-Light.woff') format('woff'), url('../fonts/TypoSlabserif-Light.ttf') format('truetype'), url('../fonts/TypoSlabserif-Light.svg#TypoSlabserif-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HandOfSean';
+	src: url('../fonts/HandOfSean.eot');
+	src: url('../fonts/HandOfSean.eot?#iefix') format('embedded-opentype'), url('../fonts/HandOfSean.woff2') format('woff2'), url('../fonts/HandOfSean.woff') format('woff'), url('../fonts/HandOfSean.ttf') format('truetype'), url('../fonts/HandOfSean.svg#HandOfSean') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/BebasNeue.eot');
+	src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue.woff2') format('woff2'), url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype'), url('../fonts/BebasNeue.svg#BebasNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'BebasKai';
+	src: url('../fonts/BebasKai.eot');
+	src: url('../fonts/BebasKai.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasKai.woff2') format('woff2'), url('../fonts/BebasKai.woff') format('woff'), url('../fonts/BebasKai.ttf') format('truetype'), url('../fonts/BebasKai.svg#BebasKai') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'TypoSlabserif-Light';
+	font-size: larger;
+}
+
+.navbar, .navbar-brand {
+	font-family: 'BebasNeue';
+	font-size: 1.5em;
+}
+
+#logo {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.home-right-column {
+	text-align: center;
+}
+
+.promo-medium, .promo-medium-plus, .promo-large {
+	font-family: 'BebasKai';
+	font-weight: bold;
+}
+
+.promo-medium {
+	font-size: 1.75em;
+}
+
+.promo-medium-plus {
+	font-size: 1.95em;
+}
+
+.promo-large {
+	font-size: 2.5em;
+}
+
+#hours {
+	font-family: 'BebasNeue';
+	font-size: 1.75em;
+}
+
+#contact {
+	text-align: center;
+	font-weight: bold;
+}
+
+#slogan {
+	font-family: 'HandOfSean';
+	font-size: 1.75em;
+}
+
+.pizza-name {
+	font-family: 'BebasNeue';
+	font-size: 1.25em;
+	margin-right: -6px;
+}
+
+.pizza-description {
+	display: block;
+	font-size: 0.75em;
+	padding-bottom: 17px;
+}
+
+.knot-description {
+	font-size: 0.75em;
+	clear: both;
+	line-height: initial;
+}
+
+.pizza-size-inline-fixed-width {
+	float: left;
+	display: block;
+	width: 54px;
+}
+
+.knot-name, .side-name, .stromboli-name, .beverage-name {
+	font-family: 'BebasNeue';
+	font-size: 1.25em;
+	float: left;
+}
+
+.knot-price, .side-price {
+	float: left;
+	width: 50px;
+	padding-top: 3px;
+}
+
+.knot-name, .side-name {
+	width: 150px;
+}
+
+.knot-name, .knot-price, .side-name, .side-price {
+	margin-top: 10px;
+}
+
+sup {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.3em;
+}
+/* the two price columns */
+.bold-price, table .pizza td:first-child + td, table .pizza td:first-child + td + td, table .pizza td:first-child + td + td + td {
+	font-weight: bold;
+}
+
+.container .pizza tr td:first-child {
+	line-height: 0.9;
+}
+
+.container table {
+	width: 100%;
+}
+
+	.container table th {
+		background-color: black;
+		padding-left: 8px;
+		color: white;
+	}
+
+	.container table tbody.pizza td {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+
+	.container table td, .container table th {
+		vertical-align: top;
+	}
+
+	.container table .ingredients {
+		text-align: left;
+		font-size: 0.86em;
+	}
+
+.container footer {
+	font-style: italic;
+	font-size: 0.875em;
+}
+
+#upcharge20 {
+	font-family: 'BebasNeue';
+	font-size: 1.25em;
+	color: red;
+	text-align: center;
+	padding: 14px;
+}
+
+#buy-the-slice-green-border {
+	border: solid green 3px;
+	padding: 3px;
+	text-align: center;
+}
+
+#buy-the-slice-red-border {
+	border: solid red 3px;
+	padding: 10px;
+	text-align: center;
+}
+
+#buy-the-slice-inline-content {
+	display: inline-block;
+	text-align: left;
+}
+
+#buy-the-slice-description {
+	margin: initial;
+	margin-top: 8px;
+}
+
+.menu-section {
+	background: rgba(0,133,62,1);
+	background: -moz-linear-gradient(left, rgba(0,133,62,1) 0%, rgba(0,133,62,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 66%, rgba(229,25,55,1) 66%, rgba(229,25,55,1) 69%, rgba(229,25,55,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,133,62,1)), color-stop(33%, rgba(0,133,62,1)), color-stop(33%, rgba(255,255,255,1)), color-stop(46%, rgba(255,255,255,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(66%, rgba(255,255,255,1)), color-stop(66%, rgba(229,25,55,1)), color-stop(69%, rgba(229,25,55,1)), color-stop(100%, rgba(229,25,55,1)));
+	background: -webkit-linear-gradient(left, rgba(0,133,62,1) 0%, rgba(0,133,62,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 66%, rgba(229,25,55,1) 66%, rgba(229,25,55,1) 69%, rgba(229,25,55,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,133,62,1) 0%, rgba(0,133,62,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 66%, rgba(229,25,55,1) 66%, rgba(229,25,55,1) 69%, rgba(229,25,55,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,133,62,1) 0%, rgba(0,133,62,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 66%, rgba(229,25,55,1) 66%, rgba(229,25,55,1) 69%, rgba(229,25,55,1) 100%);
+	background: linear-gradient(to right, rgba(0,133,62,1) 0%, rgba(0,133,62,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 66%, rgba(229,25,55,1) 66%, rgba(229,25,55,1) 69%, rgba(229,25,55,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00853e', endColorstr='#e51937', GradientType=1 );
+	font-family: 'HandOfSean';
+	font-size: 1.25em;
+	text-align: center;
+	text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+	padding: 7px 0px 7px 0px;
+}
+
+.menu-sub-section {
+	color: white;
+	background-color: #017DC3;
+	font-family: 'BebasKai';
+	font-size: 1.25em;
+}
+
+#pricing-notice {
+	color: green;
+	font-style: italic;
+	padding-top: 20px;
+	padding-right: 75px;
+	padding-bottom: 20px;
+	font-size: 0.8em;
+}
+
+#knots-description {
+	text-transform: uppercase;
+	font-size: 0.875em;
+	margin-bottom: 7px;
+}
+.table-row-whitespace {
+	font-size:0.2em;
+}
+.specials-menu {
+	text-align: center;
+}
+
+#specials-cell {
+	text-align: center;
+}
+
+#specials-outer-container {
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: solid 3px green;
+	border-bottom: solid 3px green;
+	border-right: solid 3px green;
+	padding: 0px 3px 3px 3px;
+	margin-bottom: 6px;
+}
+
+#specials-inner-container {
+	border-left: solid 3px red;
+	border-bottom: solid 3px red;
+	border-right: solid 3px red;
+}
+
+.specials-section {
+	font-family: 'BebasNeue';
+	font-size: 1.5em;
+}
+
+.specials-days, .specials-detail {
+	font-family: 'BebasNeue';
+	font-size: 0.875em;
+}
+
+.specials-times {
+	font-family: 'TypoSlabserif-Light';
+	font-weight: bold;
+}
+
+.stromboli-price, .beverage-price {
+	float: left;
+	width: 50px;
+	padding-top: 3px;
+	margin-top: 10px;
+}
+
+.stromboli-name, .beverage-name {
+	float: left;
+	width: 200px;
+	margin-top: 10px;
+}
+
+#social a {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#social img {
+	width: 52px;
+}
+
+.navbar div {
+	vertical-align: middle;
+}
+
+#location-page #location-message {
+	font-weight: bold;
+}
+
+#location-page #location-address, #location-page #location-hours {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+#map-container {
+	height: 100%;
+}
+
+	#map-container iframe {
+		height: 100%;
+		display: block;
+		width: 100%;
+	}
+/* pad the 'buy the slice' box on the bottom to give room before the next row */
+@media screen and (max-width: 992px) {
+	#stone-oven-pizzas {
+		margin-bottom: 15px;
+	}
+}
+/* brand label and collapsible menu collide */
+@media screen and (max-width: 405px) {
+	.navbar-brand {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#hours {
+		font-size: 1.55em;
+	}
+}
+/* brand label and collapsible menu collide again */
+@media screen and (max-width: 350px) {
+	.navbar-brand {
+		font-size: 1em;
+	}
+}
+a screen and (max-width: 330px) {
+	.promo-medium {
+		font-size: 1.42em;
+	}
+}
+
+/**
+	
+	
+	*
+	*
+	*
+
+
+	*
+	*
+	*
+	
+	*
+	*
+	*
+	
+	
+	
+	*/
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+	/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+	.visuallyhidden.focusable:active,
+	.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+								   http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+		a[href]:after {
+			content: " (" attr(href) ")";
+		}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
