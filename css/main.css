@@ -159,6 +159,10 @@ body {
 	font-size: larger;
 }
 
+.center {
+	text-align: center;
+}
+
 .navbar, .navbar-brand {
 	font-family: 'BebasNeue';
 	font-size: 1.5em;
@@ -205,13 +209,13 @@ body {
 	font-size: 1.75em;
 }
 
-.pizza-name {
+.menu-item-name {
 	font-family: 'BebasNeue';
 	font-size: 1.25em;
 	margin-right: -6px;
 }
 
-.pizza-description {
+.menu-item-description {
 	display: block;
 	font-size: 0.75em;
 	padding-bottom: 17px;
@@ -343,6 +347,7 @@ sup {
 	background-color: #017DC3;
 	font-family: 'BebasKai';
 	font-size: 1.25em;
+	text-align: center;
 }
 
 #pricing-notice {
@@ -359,9 +364,11 @@ sup {
 	font-size: 0.875em;
 	margin-bottom: 7px;
 }
+
 .table-row-whitespace {
-	font-size:0.2em;
+	font-size: 0.2em;
 }
+
 .specials-menu {
 	text-align: center;
 }
@@ -447,6 +454,12 @@ sup {
 		display: block;
 		width: 100%;
 	}
+
+/* override bootstrap collapsible menu icon */
+.navbar-toggle .icon-bar {
+	background-color: #017DC3;
+}
+
 /* pad the 'buy the slice' box on the bottom to give room before the next row */
 @media screen and (max-width: 992px) {
 	#stone-oven-pizzas {
@@ -471,7 +484,8 @@ sup {
 		font-size: 1em;
 	}
 }
-a screen and (max-width: 330px) {
+
+@media screen and (max-width: 330px) {
 	.promo-medium {
 		font-size: 1.42em;
 	}
