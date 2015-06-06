@@ -163,6 +163,9 @@ body {
 	text-align: center;
 }
 
+.dashed {
+	border: dashed #017DC3 2px;
+}
 .navbar, .navbar-brand {
 	font-family: 'BebasNeue';
 	font-size: 1.5em;
@@ -209,14 +212,29 @@ body {
 	font-size: 1.75em;
 }
 
-.menu-item-name {
+.menu-item-container {
+	width: 100%;
 	font-family: 'BebasNeue';
 	font-size: 1.25em;
+}
+
+.menu-item-name {
+	display: inline-block;
+	float: left;
 	margin-right: -6px;
+	width: 90%;
+}
+
+.menu-item-price {
+	display: inline-block;
+	float: left;
+	text-align: right;
+	width: 10%;
 }
 
 .menu-item-description {
 	display: block;
+	font-family: 'TypoSlabserif-Light';
 	font-size: 0.75em;
 	padding-bottom: 17px;
 }
